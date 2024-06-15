@@ -1,0 +1,48 @@
+@media only screen and (min-width: 35rem) {
+
+    /*  HEADER  */
+
+
+    .image-container img {
+        max-height: 100%;
+        width: auto;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+
+    }
+
+    /*  MAIN  */
+
+    .parent-cards {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 15px;
+    }
+
+    .parent-cards section {
+        box-shadow: 1px 1px 10px black;
+    }
+
+    /* NAV */
+
+    nav ul {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        flex: 1 1 560px;
+    }
+
+
+    header span {
+        margin-left: 20px;
+        align-items: center;
+    }
+
+}

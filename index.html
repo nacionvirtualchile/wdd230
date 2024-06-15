@@ -8,15 +8,55 @@
     <meta name="description"
         content="This will be the course assignment portal of the WDD 230 - Web Frontend Development course,  by Sergio Villarroel." />
     <meta name="author" content="Sergio Villarroel" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
     <header>
-        <h1 contenteditable>Header.</h1>
+        <div class="image-container">
+            <img src="images/profile.jpg" alt="Sergio Villarroel profile" width="75" height="100">
+        </div>
+        <span>Sergio Villarroel</span>
     </header>
-    <nav>Navegation.</nav>
-    <Main contenteditable>Main Content Area.</Main>
-    <footer contenteditable>Footer Content.</footer>
+    <nav>
+        <ul>
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+    </nav>
+
+    <Main contenteditable>
+        <h1 contenteditable>WDD 230: Web Frontend Development</h1>
+        <div class="parent-cards">
+            <section class="card">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li><a href="">Activity 1</a></li>
+                    <li><a href="">Activity 2</a></li>
+                    <li><a href="">Activity 3</a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Information</h2>
+                <p>City</p>
+                <p>Weather</p>
+                <p>Page visits:</p>
+            </section>
+        </div>
+    </Main>
+
+    <footer contenteditable>
+        <p>©<span id="year"></span> - Sergio <strong>Andrés</strong> Villarroel Rojas - Chile</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
+<script src="scripts/getdates.js"></script>
 
 </html>
