@@ -13,7 +13,18 @@ window.addEventListener('resize', function () {
         navigationID.classList.remove('navigation');
     } else {
         navigationID.classList.add('navigation');
-        hamButton.classList.remove('open');
+        //hamButton.classList.remove('open');
+    }
+
+});
+
+window.addEventListener('DOMContentLoaded', function () {
+    if (window.innerWidth >= 560) {
+        navigationID.classList.remove('open');
+        navigationID.classList.remove('navigation');
+    } else {
+        navigationID.classList.add('navigation');
+        //hamButton.classList.remove('open');
     }
 
 });
