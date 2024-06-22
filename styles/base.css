@@ -161,8 +161,7 @@ nav .active {
 }
 
 .navigation a:hover {
-    background-color: #bbb;
-    color: #333;
+    background-color: rgba(255, 255, 255, 0.2);
     font-weight: 700;
 }
 
