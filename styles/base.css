@@ -2,9 +2,9 @@
 
 :root {
     /* Colores principales */
-    --color-primary: rgb(0, 87, 0);
+    --color-primary: rgb(0, 75, 0);
     /* Azul oscuro */
-    --color-secondary: lightgreen;
+    --color-secondary: rgb(187, 255, 187);
     /* Amarillo */
 
     /* Colores de fondo y texto */
