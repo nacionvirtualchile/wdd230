@@ -27,6 +27,11 @@
         box-shadow: 1px 1px 10px black;
     }
 
+    .parent-cards section a {
+        color: rgb(16, 0, 85);
+    }
+
+
     /* NAV */
 
     nav ul {
