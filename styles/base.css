@@ -70,6 +70,12 @@ header {
     display: flex;
 }
 
+#imgMode {
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
 
 header span {
     font-family: 'Bebas Neue', sans-serif;
