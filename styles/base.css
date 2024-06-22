@@ -138,7 +138,6 @@ nav .active {
 
 #menu.navigation::before {
     content: "☰";
-    /* background-color: none; */
 }
 
 #menu {
