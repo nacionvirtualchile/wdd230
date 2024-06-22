@@ -13,6 +13,7 @@ window.addEventListener('resize', function () {
         navigationID.classList.remove('navigation');
     } else {
         navigationID.classList.add('navigation');
+        hamButton.classList.remove('open');
     }
 
 });

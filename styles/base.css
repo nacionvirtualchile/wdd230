@@ -130,6 +130,10 @@ nav .active {
     background-color: aliceblue;
 }
 
+#menu.navigation::before {
+    content: "☰";
+}
+
 #menu {
     font-size: 1.5rem;
     border: 0;
