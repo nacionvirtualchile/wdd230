@@ -127,7 +127,6 @@ nav .active {
 #menu.open::before {
     content: url("https://nacionvirtualchile.github.io/wdd230/images/favicon.ico");
     background-color: aliceblue;
-    *
 }
 
 #menu {
@@ -176,31 +175,6 @@ nav .active {
 
 
 
-/* ////////////////// 
-
-nav {
-    max-width: 700px;
-    margin: 1rem auto;
-}
-
-
-
-
-
-
-
-
-
-
-.active::before {
-    content: "📍";
-}
-
-
-******************  */
-
-
-
 /*  MAIN  */
 
 main {
@@ -237,5 +211,3 @@ main {
     padding-right: 10px;
 
 }
-
-/*  FOOTER  */
