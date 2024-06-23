@@ -57,10 +57,6 @@ h1 {
     padding-left: 5px;
 }
 
-header div span {
-    align-items: flex-start;
-}
-
 
 /*  HEADER  */
 
@@ -84,18 +80,6 @@ header {
     top: 50px;
 }
 
-header span {
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-
-    flex: 1;
-    display: flex;
-    align-items: center;
-    /* Centra verticalmente el texto */
-    justify-content: flex-start;
-    /* Alinea el texto a la izquierda */
-    padding-left: 1rem;
-}
 
 
 .image-container {
@@ -106,6 +90,13 @@ header span {
 
 nav {
     margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 1rem;
 }
 
 nav ul {
@@ -123,7 +114,6 @@ nav a {
 
 nav a:hover {
     background-color: var(--color-background-dark);
-    color: var(--color-text-light);
     text-decoration: overline;
 }
 
@@ -165,13 +155,10 @@ nav .active {
 
 
 
-
 .navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: #333;
-    color: #fff;
 }
 
 .navigation a {
@@ -179,7 +166,6 @@ nav .active {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: #fff;
 }
 
 .navigation a:hover {
