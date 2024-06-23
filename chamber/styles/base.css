@@ -52,10 +52,12 @@ h6 {
 }
 
 h1 {
-    font-size: 2rem;
-    border-bottom-color: rgb(168, 168, 168);
-    border-bottom-style: solid;
-    padding: 2%;
+    font-size: 1rem;
+    padding-top: 30px;
+}
+
+header div span {
+    align-items: flex-start;
 }
 
 
@@ -94,11 +96,6 @@ header span {
     padding-left: 1rem;
 }
 
-header div span {
-    font-size: 1rem;
-    align-items: flex-start;
-    padding-top: 30px;
-}
 
 .image-container {
     display: flex;
