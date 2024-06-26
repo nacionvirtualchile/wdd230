@@ -8,11 +8,11 @@ img {
 
 main {
     margin: 0 auto;
-
     display: flex;
     flex-direction: column;
 
 }
+
 
 h1 {
     text-align: center;
