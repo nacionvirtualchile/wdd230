@@ -1,13 +1,22 @@
 img {
-    display: block;
-    margin: 0 auto;
+    width: 100%;
     background-color: black;
     animation: fade 12s;
+}
+
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 h1 {
     text-align: center;
 }
+
 
 @keyframes fade {
     0% {
