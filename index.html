@@ -33,7 +33,7 @@
             <img id="imgMode" src="images/dark-mode.svg" alt="Dark mode">
         </div>
         <div class="image-container">
-            <img src="images/profile.jpg" alt="Sergio Villarroel profile" width="75" height="100">
+            <img src="images/profile.webp" alt="Sergio Villarroel profile" width="75" height="100">
         </div>
         <span>Sergio Villarroel</span>
         <button id="menu" aria-label="Hamburger-button-menu"></button>
@@ -49,6 +49,17 @@
     </nav>
 
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 960px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="One of the most beautiful lds temples" width="1500px"
+                    height="750px">
+            </picture>
+            <div class="templeLabel">
+                <p>Beautiful Lds Temple</p>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="parent-cards">
             <section class="card">
@@ -78,11 +89,14 @@
                 <h2>Information</h2>
                 <p>City</p>
                 <p>Weather</p>
-                <p>Page visits:</p>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </section>
         </div>
     </main>
-
+    <iframe id="GoogleMap"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.47826828313!2d-3.8443473332188547!3d40.43809861093788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1719703209486!5m2!1ses!2ses"
+        width="950" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>©<span id="year"></span> - Sergio <strong>Andrés</strong> Villarroel Rojas - Chile</p>
         <p id="lastModified"></p>
@@ -90,6 +104,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/humbergerMenu.js"></script>
     <script src="scripts/darMode.js"></script>
+    <script src="scripts/pageVisits.js"></script>
 </body>
 
 </html>

@@ -58,4 +58,14 @@
     }
 
 
+    .templeLabel {
+        padding: 1.5rem;
+
+    }
+
+
+    .templeLabel p {
+        padding: .25rem;
+    }
+
 }

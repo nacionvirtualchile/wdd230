@@ -12,7 +12,7 @@ chaptersArray.forEach(chapter => {
 function displayList(item) {
     const li = document.createElement('li');
     const deleteButton = document.createElement('button');
-    li.textContent = item;
+    li.innerHTML = item;
     deleteButton.textContent = '❌';
     deleteButton.classList.add('delete');
     deleteButton.addEventListener('click', function () {
