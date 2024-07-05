@@ -185,7 +185,7 @@ nav .active {
 
 /*  MAIN  */
 
-main {
+#indexMain {
 
     margin: 0 auto;
     font-family: "Merriweather", serif;
@@ -224,4 +224,62 @@ main {
     padding-left: 10px;
     padding-right: 10px;
 
+}
+
+
+/* MAIN OF DISCOVER PAGE */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sidebar {
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#DiscoverMain {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+#DiscoverMain h2,
+#DiscoverMain p {
+    margin-bottom: 25px;
+
+}
+
+.card-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.sidebar h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+.sidebar p {
+    text-align: center;
+    margin-bottom: 25px;
 }
