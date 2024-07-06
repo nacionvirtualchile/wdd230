@@ -1,0 +1,266 @@
+/*  GENERALS  */
+
+:root {
+    /* Colores principales */
+    --color-primary: rgb(0, 75, 0);
+    /* Azul oscuro */
+    --color-secondary: rgb(187, 255, 187);
+    /* Amarillo */
+
+    /* Colores de fondo y texto */
+    --color-text-light: #ffffff;
+    /* Blanco */
+    --color-background-dark: #000000;
+    /* Texto oscuro */
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    background-color: var(--color-background-dark);
+    color: var(--color-text-light);
+    padding: 30px;
+    text-align: center;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    font-size: 2rem;
+    border-bottom-color: rgb(168, 168, 168);
+    border-bottom-style: solid;
+    padding: 2%;
+}
+
+
+/*  HEADER  */
+
+header {
+    display: flex;
+}
+
+#imgMode {
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+
+header span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+
+    flex: 1;
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente el texto */
+    justify-content: flex-start;
+    /* Alinea el texto a la izquierda */
+    padding-left: 1rem;
+}
+
+
+/* NAV */
+
+nav {
+    background-color: var(--color-primary);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: var(--color-secondary);
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--color-text-light);
+    text-decoration: overline;
+}
+
+nav .active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* ////////////////// HAMBURGER MANU ///////////////// */
+
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: url("https://nacionvirtualchile.github.io/wdd230/images/favicon.ico");
+    background-color: aliceblue;
+}
+
+#menu.navigation::before {
+    content: "☰";
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background-color: black;
+    color: #ffffff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+}
+
+
+
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+/* ////////////////// END HAMBURGER MANU ///////////////// */
+
+
+
+
+
+/*  MAIN  */
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.parent-cards {
+    margin: 1rem 2vw;
+}
+
+.parent-cards section {
+    border: 1px solid black;
+    background-color: var(--color-secondary);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+}
+
+.parent-cards h2 {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    text-align: center;
+    display: block;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.parent-cards p,
+.parent-cards li {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+
+.hero {
+    position: relative;
+    height: 300px;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 0%;
+    margin-top: 0%;
+
+}
+
+
+.templeLabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 5px;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+.templeLabel p {
+    margin: 0;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Great Vibes", serif;
+}
+
+
+#GoogleMap {
+    display: block;
+    margin: 0 auto;
+}

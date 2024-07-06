@@ -1,0 +1,63 @@
+:root {
+    --zebra-dark: rgba(0, 0, 0, 0.1);
+    --zebra-light: rgba(255, 255, 255, 0.2);
+    --backgroundColor-Header-highlight: rgba(0, 0, 0, 1);
+    --color-Header-highlight: rgb(255, 255, 255);
+}
+
+html {
+    font-family: sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+th {
+    background-color: rgb(55, 55, 55);
+    color: white;
+    border: 0;
+}
+
+td {
+    text-align: center;
+}
+
+
+caption {
+    padding: 10px;
+}
+
+
+tr:nth-child(even) td {
+    background-color: var(--zebra-dark);
+}
+
+tr:nth-child(odd) td {
+    background-color: var(--zebra-light);
+}
+
+
+tr:first-child th,
+.highlight {
+    background-color: var(--backgroundColor-Header-highlight);
+    color: var(--color-Header-highlight);
+    border: 0cap;
+}
+
+caption {
+    padding: 5px;
+    caption-side: bottom;
+    color: rgb(99, 99, 99);
+    font-size: small;
+}
