@@ -47,10 +47,10 @@
         </div>
         <nav id="navigation" class="navigation">
             <ul>
-                <li class="active"><a href="">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="">Nosotros</a></li>
                 <li><a href="">Servicios</a></li>
-                <li><a href="">Contáctanos</a></li>
+                <li class="active"><a href="">Contáctanos</a></li>
             </ul>
         </nav>
 
@@ -58,55 +58,74 @@
         <button id="menu" aria-label="Hamburger-button-menu"></button>
     </header>
 
-    <main id="indexMain">
+
+    <main id="indexMain" class="grid-container">
+        <section class="left-column">
+
+            <form method="get" action="thankyou.html" class="myForm" id="myForm">
+                <fieldset>
+                    <legend>
+                        Form to apply
+                    </legend>
+                    <label>First name*<input type="text" id="firstname" name="firstname" required></label>
+                    <label>Last name*<input type="text" id="lastname" name="lastname" required></label>
+
+                    <label>Title or position<input type="text" id="position" name="position" pattern="^[a-zA-Z\s-]{7,}$"
+                            title="must be at least 7 characters"></label>
+                    <label id="message"></label>
+
+                    <label>Email*<input type="email" id="email" name="email" placeholder="any@any.com" required
+                            title="Please a valid email address is requiered"></label>
+                    <label>Mobile number*<input type="tel" id="phone" name="phone" required></label>
+                    <label>Business/organization's name*<input type="text" id="organization" name="organization"
+                            required></label>
+
+                    <label>Membership level:</label>
+                    <label><input type="radio" id="np" name="membership" value="np" required>
+                        NP Membership is for non profit organizations and there is no fee</label>
+                    <label><input type="radio" id="bronze" name="membership" value="bronze">
+                        Bronze Membership</label>
+                    <label><input type="radio" id="silver" name="membership" value="silver">
+                        Silver Membership</label>
+                    <label><input type="radio" id="gold" name="membership" value="gold">
+                        Gold Membership</label>
 
 
 
-        <form method="get" action="thankyou.html" class="myForm">
+                    <label>
+                        Business/organization's description<textarea id="description" name="description" rows="4"
+                            cols="50" placeholder="business/organization's description..."></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+
+                    <input type="submit" value="Apply now!">
+                </fieldset>
+            </form>
+        </section>
+        <section class="right-column">
+
             <fieldset>
                 <legend>
-                    Form to apply
+                    Membership level benefits
                 </legend>
-                <label>First name*<input type="text" id="firstname" name="firstname" required></label>
-                <label>Last name*<input type="text" id="lastname" name="lastname" required></label>
 
-                <label>Title or position<input type="text" id="position" name="position" pattern="^[a-zA-Z\s-]{7,}$"
-                        title="must be at least 7 characters"></label>
-                <label id="message"></label>
+                <div class="right"><strong>NP Membership:</strong> Benefits for non-profit organizations, free of
+                    charge.</div>
+                <div class="right"><strong>Bronze Membership:</strong> Basic access to our facilities and services.
+                    Cost: $50/year.
+                </div>
+                <div class="right"><strong>Silver Membership:</strong> Additional benefits, including events and
+                    discounts. Cost:
+                    $100/year.</div>
+                <div class="right"><strong>Gold Membership:</strong> All benefits, full access, and premium services.
+                    Cost:
+                    $200/year.
+                </div>
 
-                <label>Email*<input type="email" id="email" name="email" placeholder="any@any.com" required
-                        pattern="[a-zA-Z0-9._%+\-]+@" title="Please a valid email address is requiered"></label>
-                <label>Mobile number*<input type="tel" id="phone" name="phone" required></label>
-                <label>Organization's name*<input type="text" id="organization" name="organization" required></label>
-                <label>Membership level *<input type="text" id="membership" name="membership" required></label>
-
-                <label>Membership level:</label>
-
-                <label><input type="radio" id="np" name="membership" value="np" required>
-                    NP Membership is for non profit organizations and there is no fee</label>
-
-                <label><input type="radio" id="bronze" name="membership" value="bronze">
-                    Bronze Membership</label>
-
-                <label><input type="radio" id="silver" name="membership" value="silver">
-                    Silver Membership</label>
-
-                <label><input type="radio" id="gold" name="membership" value="gold">
-                    Gold Membership</label>
-
-
-
-                <label>
-                    Business/organization's description<textarea id="description" name="description" rows="4" cols="50"
-                        placeholder="business/organization's description..."></textarea>
-                </label>
-
-                <input type="hidden" id="timestamp" name="timestamp">
-
-
-                <input type="submit" value="Apply now!">
             </fieldset>
-        </form>
+        </section>
 
 
 
