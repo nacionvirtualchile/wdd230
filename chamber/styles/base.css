@@ -283,3 +283,103 @@ nav .active {
     text-align: center;
     margin-bottom: 25px;
 }
+
+
+
+
+:root {
+    --color-remark: #6f200e;
+    --color-border: #999;
+    --color-background: #eee;
+}
+
+
+/*-- FORM STYLING */
+.myForm fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.myForm legend {
+    color: #445ba9;
+    padding: 0 .5rem;
+}
+
+.myForm label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-remark);
+    font-size: .9rem;
+}
+
+
+.myForm div {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: .9rem;
+}
+
+
+.myForm input[type="text"],
+.myForm input[type="password"],
+.myForm input[type="email"] {
+    background-color: var(--color-background);
+    display: block;
+    border: solid 1px var(--color-border);
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.myForm input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 0 2rem 0;
+    box-shadow: 1px 1px 4px var(--color-border);
+}
+
+.myForm input:required {
+    border-left: solid 8px var(--color-remark);
+}
+
+.myForm input:required:valid {
+    border-left: solid 8px green;
+}
+
+
+#range {
+    width: 180px;
+    margin-bottom: 15px;
+}
+
+#rangevalue {
+    font-size: 2rem;
+    color: navy;
+}
+
+#message {
+    font-size: larger;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    width: 25%;
+}
+
+.thanks {
+    margin-bottom: 250px;
+}
