@@ -1,14 +1,15 @@
-:root {}
-
-
-.inline {
-    display: inline;
+:root {
+    --color-remark: #6f200e;
+    --color-border: #999;
+    --color-background: #eee;
+    ;
 }
+
 
 /*-- FORM STYLING */
 .myForm fieldset {
     margin: 2rem 0;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-border);
     border-radius: 6px;
     padding: .5rem 2%;
 }
@@ -21,7 +22,7 @@
 .myForm label {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: var(--color-remark);
     font-size: .9rem;
 }
 
@@ -36,9 +37,9 @@
 .myForm input[type="text"],
 .myForm input[type="password"],
 .myForm input[type="email"] {
-    background-color: #eee;
+    background-color: var(--color-background);
     display: block;
-    border: solid 1px #999;
+    border: solid 1px var(--color-border);
     border-radius: 6px;
     padding: .75rem;
     color: #555;
@@ -62,11 +63,11 @@
     width: 96%;
     max-width: 400px;
     margin: 1rem 0 2rem 0;
-    box-shadow: 1px 1px 4px #999;
+    box-shadow: 1px 1px 4px var(--color-border);
 }
 
 .myForm input:required {
-    border-left: solid 8px red;
+    border-left: solid 8px var(--color-remark);
 }
 
 .myForm input:required:valid {

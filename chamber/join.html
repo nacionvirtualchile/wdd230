@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Cámara de Comercio de Antofagasta</title>
+    <meta name="description"
+        content="The Antofagasta Chamber of Commerce website aims to serve as an informational and support platform for local businesses">
+    <meta name="author" content="Sergio Villarroel">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Cámara de Comercio - Ciudad de Antofagasta">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://nacionvirtualchile.github.io/wdd230/chamber/images/centro-antofagasta.jpg">
+    <meta property="og:url" content="https://nacionvirtualchile.github.io/wdd230/chamber/">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+</head>
+
+<body>
+    <header>
+        <div id="mode">
+            <img id="imgMode" src="images/dark-mode.svg" alt="Dark mode">
+        </div>
+        <div class="image-container">
+            <img id="camara-comercio-logo" src="images/camara-comercio-logo.png" alt="Logo Camara Comercio Antofagasta"
+                width="75" height="100">
+            <h1>Chamber of Commerce</h1>
+        </div>
+        <nav id="navigation" class="navigation">
+            <ul>
+                <li class="active"><a href="">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Contáctanos</a></li>
+            </ul>
+        </nav>
+
+
+        <button id="menu" aria-label="Hamburger-button-menu"></button>
+    </header>
+
+    <main id="indexMain">
+
+
+
+        <form method="get" action="thankyou.html" class="myForm">
+            <fieldset>
+                <legend>
+                    Form to apply
+                </legend>
+                <label>First name*<input type="text" id="firstname" name="firstname" required></label>
+                <label>Last name*<input type="text" id="lastname" name="lastname" required></label>
+
+                <label>Title or position<input type="text" id="position" name="position" pattern="^[a-zA-Z\s-]{7,}$"
+                        title="must be at least 7 characters"></label>
+                <label id="message"></label>
+
+                <label>Email*<input type="email" id="email" name="email" placeholder="any@any.com" required
+                        pattern="[a-zA-Z0-9._%+\-]+@" title="Please a valid email address is requiered"></label>
+                <label>Mobile number*<input type="tel" id="phone" name="phone" required></label>
+                <label>Organization's name*<input type="text" id="organization" name="organization" required></label>
+                <label>Membership level *<input type="text" id="membership" name="membership" required></label>
+
+                <legend>Seleccione su nivel de membresía:</legend>
+
+                <label><input type="radio" id="np" name="membership" value="np" required>
+                    NP Membership (sin costo)</label>
+
+                <label><input type="radio" id="bronze" name="membership" value="bronze">
+                    Bronze Membership</label>
+
+                <label><input type="radio" id="silver" name="membership" value="silver">
+                    Silver Membership</label>
+
+                <label><input type="radio" id="gold" name="membership" value="gold">
+                    Gold Membership</label>
+
+
+
+                <label>
+                    Business/organization's description<textarea id="description" name="description" rows="4" cols="50"
+                        placeholder="business/organization's description..."></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+
+                <input type="submit" value="Apply now!">
+            </fieldset>
+        </form>
+
+
+
+    </main>
+
+    <footer>
+        <p>©<span id="year"></span> - Cámara Comercio de Antofagasta por <strong>Sergio Villarroel para WDD 230</strong>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/humbergerMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+</body>
+
+</html>
