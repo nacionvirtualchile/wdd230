@@ -1,18 +1,13 @@
 /*  GENERALS  */
 
 :root {
-    /* Colores principales */
     --color-primary: #03045e;
-    /* Azul oscuro */
     --color-secondary: #90e0ef;
-    /* Amarillo */
-
-    /* Colores de fondo y texto */
     --color-text-light: #ffffff;
-    /* Blanco */
     --color-background-dark: #0066cc;
-    /* Texto oscuro */
 
+    --color-remark: #6f200e;
+    --color-border: #999;
 }
 
 
@@ -287,17 +282,12 @@ nav .active {
 
 
 
-:root {
-    --color-remark: #6f200e;
-    --color-border: #999;
-    --color-background: #eee;
-}
 
 
 /*-- FORM STYLING */
 .myForm fieldset {
     margin: 2rem 0;
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-primary);
     border-radius: 6px;
     padding: .5rem 2%;
 }
@@ -310,7 +300,7 @@ nav .active {
 .myForm label {
     display: block;
     padding-top: 1rem;
-    color: var(--color-remark);
+    color: var(--color-primary);
     font-size: .9rem;
 }
 
@@ -324,10 +314,12 @@ nav .active {
 
 .myForm input[type="text"],
 .myForm input[type="password"],
+.myForm input[type="tel"],
+.myForm textarea,
 .myForm input[type="email"] {
     background-color: var(--color-background);
     display: block;
-    border: solid 1px var(--color-border);
+    border: solid 1px var(--color-primary);
     border-radius: 6px;
     padding: .75rem;
     color: #555;
@@ -344,18 +336,18 @@ nav .active {
 
 .myForm input[type="submit"] {
     border: none;
-    background-image: linear-gradient(#9c2c13, #6f200e);
+    background-image: linear-gradient(var(--color-background-dark), var(--color-primary));
     color: #fff;
     border-radius: 6px;
     padding: .8rem;
     width: 96%;
     max-width: 400px;
     margin: 1rem 0 2rem 0;
-    box-shadow: 1px 1px 4px var(--color-border);
+    box-shadow: 1px 1px 4px var(--color-primary);
 }
 
 .myForm input:required {
-    border-left: solid 8px var(--color-remark);
+    border-left: solid 8px var(--color-primary);
 }
 
 .myForm input:required:valid {
