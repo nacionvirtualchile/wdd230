@@ -1,0 +1,23 @@
+{
+    "familyName": "Villarroel Rojas",
+    "dateMoved": "01/01/2024",
+    "recordsNumber": 3,
+    "bishopricVisited": true,
+    "members": [
+        {
+            "name": "Juan Villarroel Rojas",
+            "gender": "M",
+            "birthdate": "09/03/2015"
+        },
+        {
+            "name": "Jhon Villarroel Rojas",
+            "gender": "M",
+            "birthdate": "01/09/1980"
+        },
+        {
+            "name": "Liset Villarroel Rojas",
+            "gender": "F",
+            "birthdate": "07/01/1985"
+        }
+    ]
+}
