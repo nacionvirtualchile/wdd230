@@ -1,0 +1,113 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "week01/chamber-site-plan.html",
+                    "title": "Chamber site plan"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Web Design Principles"
+                },
+                {
+                    "url": "https://codepen.io/andrexrojas/pen/BaerWbM",
+                    "title": "CodePen Hamburger Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "DOM Manipulation - Bom"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "Week 3 - WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Week 3 - LazyLoading"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive-images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "BOM version 2"
+                },
+                {
+                    "url": "chamber/discover.html",
+                    "title": "The Chamber Discover Page"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/andrexrojas/pen/VwJZVoB?editors=1100",
+                    "title": "CSS Pseudo-Classes"
+                },
+                {
+                    "url": "week04/images/Excercise-Combinators.webp",
+                    "title": "Combinator exercise"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "HTML Tables for Data Presentation"
+                },
+                {
+                    "url": "week04/FormExample/index.html",
+                    "title": "Form Tutorial"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Team Activity - Form"
+                },
+                {
+                    "url": "chamber/join.html",
+                    "title": "The Chamber Join Page"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/andrexrojas/pen/WNqbzOK?editors=1100",
+                    "title": "CSS Pseudo-elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "The Fetch API: latter-day prophets"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Consuming a Weather API"
+                }
+            ]
+        }
+    ]
+}

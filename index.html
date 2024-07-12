@@ -63,8 +63,8 @@
         <div class="parent-cards">
             <section class="card">
                 <h2>Learning Activities</h2>
-                <ul>
-                    <li><a target="_blank"
+                <ul id="ulToLinks">
+                    <!-- <li><a target="_blank"
                             href="https://nacionvirtualchile.github.io/wdd230/week01/chamber-site-plan.html">Week 1 -
                             Chamber site plan</a></li>
                     <li><a target="_blank" href="https://nacionvirtualchile.github.io/wdd230/week02/design.html">Week 2
@@ -103,13 +103,15 @@
                     <li><a target="_blank" href="week05/prophets.html">Week
                             5 - The Fetch API: latter-day prophets</a></li>
                     <li><a target="_blank" href="week05/weather.html">Week
-                            5 - Consuming a Weather API</a></li>
+                            5 - Consuming a Weather API</a></li> -->
                 </ul>
             </section>
             <section class="card">
                 <h2>Information</h2>
-                <p>City</p>
-                <p>Weather</p>
+                <p id="city"></p>
+                <p id="wheaterTemperature"></p>
+                <picture><img id="wheaterIcon" src="" alt=""></picture>
+                <p id="wheaterDescription"></p>
                 <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </section>
         </div>
@@ -126,6 +128,8 @@
     <script src="scripts/humbergerMenu.js"></script>
     <script src="scripts/darMode.js"></script>
     <script src="scripts/pageVisits.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 
 </html>
