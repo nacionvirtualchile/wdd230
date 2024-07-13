@@ -413,6 +413,8 @@ nav .active {
     background-color: #eee;
     padding: 20px;
     height: 220px;
+    text-align: center;
+    font-size: 10px;
 }
 
 
@@ -423,10 +425,6 @@ nav .active {
     align-items: center;
 }
 
-.membersGrid section {
-    text-align: center;
-    font-size: 10px;
-}
 
 .membersGrid section a {
     text-align: center;
