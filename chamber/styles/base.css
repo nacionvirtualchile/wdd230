@@ -408,7 +408,7 @@ nav .active {
 }
 
 
-section {
+.membersGrid section {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #eee;
     padding: 20px;
