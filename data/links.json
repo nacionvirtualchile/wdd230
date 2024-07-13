@@ -106,6 +106,10 @@
                 {
                     "url": "week05/weather.html",
                     "title": "Consuming a Weather API"
+                },
+                {
+                    "url": "chamber/directory.html",
+                    "title": "The Directory Page"
                 }
             ]
         }
