@@ -458,9 +458,8 @@ section {
 }
 
 .list section picture,
-br {
+.list section br {
     display: none;
-    /* smaller viewports only */
 }
 
 .list section h3 {
@@ -487,6 +486,11 @@ br {
     text-align: center;
 }
 
+.grid section picture,
+.grid section br {
+    display: inline;
+}
+
 
 
 .menu {
@@ -500,4 +504,10 @@ br {
 .menu button {
     padding: 1rem;
     font-weight: 700;
+}
+
+
+.title {
+    text-align: center;
+    font-size: large;
 }
