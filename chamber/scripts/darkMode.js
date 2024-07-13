@@ -15,6 +15,7 @@ const myFormTextAreas = document.querySelectorAll('.myForm textarea');
 
 modeButton.addEventListener('click', () => {
     const directorioSections = document.querySelectorAll('.membersGrid section');
+    const directorioSectionAs = document.querySelectorAll('.membersGrid section a');
 
 
     if (imgMode.getAttribute('src') === "images/dark-mode.svg") {
@@ -45,6 +46,12 @@ modeButton.addEventListener('click', () => {
             directorioSections.forEach(section => {
                 section.style.color = "#fff";
                 section.style.background = "#505050";
+            });
+        }
+
+        if (directorioSectionAs) {
+            directorioSectionAs.forEach(a => {
+                a.style.color = "#90e0ef";
             });
         }
 
@@ -113,6 +120,12 @@ modeButton.addEventListener('click', () => {
             directorioSections.forEach(section => {
                 section.style.color = "#000";
                 section.style.background = "#eee";
+            });
+        }
+
+        if (directorioSectionAs) {
+            directorioSectionAs.forEach(a => {
+                a.style.color = "#0066cc";
             });
         }
 
