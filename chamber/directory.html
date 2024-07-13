@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Cámara de Comercio de Antofagasta</title>
+    <meta name="description"
+        content="The Antofagasta Chamber of Commerce website aims to serve as an informational and support platform for local businesses">
+    <meta name="author" content="Sergio Villarroel">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Cámara de Comercio - Ciudad de Antofagasta">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://nacionvirtualchile.github.io/wdd230/chamber/images/centro-antofagasta.jpg">
+    <meta property="og:url" content="https://nacionvirtualchile.github.io/wdd230/chamber/">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+</head>
+
+<body>
+    <header>
+        <div id="mode">
+            <img id="imgMode" src="images/dark-mode.svg" alt="Dark mode">
+        </div>
+        <div class="image-container">
+            <img id="camara-comercio-logo" src="images/camara-comercio-logo.png" alt="Logo Camara Comercio Antofagasta"
+                width="75" height="100">
+            <h1>Chamber of Commerce</h1>
+        </div>
+        <nav id="navigation" class="navigation">
+            <ul>
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="join.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+
+
+        <button id="menu" aria-label="Hamburger-button-menu"></button>
+    </header>
+
+
+
+    <main id="indexMain">
+
+
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+
+        <article class="membersGrid">
+
+        </article>
+
+
+
+    </main>
+
+    <footer>
+        <p>©<span id="year"></span> - Cámara Comercio de Antofagasta por <strong>Sergio Villarroel para WDD 230</strong>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/humbergerMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/members.js"></script>
+</body>
+
+</html>

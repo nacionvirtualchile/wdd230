@@ -406,3 +406,98 @@ nav .active {
     font-weight: 700;
     color: #0066cc;
 }
+
+
+section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #eee;
+    padding: 20px;
+    height: 220px;
+}
+
+
+.membersGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.membersGrid section {
+    text-align: center;
+    font-size: 10px;
+}
+
+.membersGrid section a {
+    text-align: center;
+    font-size: 7px;
+}
+
+.membersGrid section p {
+    text-align: center;
+    font-size: 10px;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 1rem;
+    height: auto;
+}
+
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section picture,
+br {
+    display: none;
+    /* smaller viewports only */
+}
+
+.list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+    background-color: var(--color-secondary);
+}
+
+
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.grid section {
+    text-align: center;
+}
+
+
+
+.menu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: var(--color-background-dark);
+    text-align: center;
+}
+
+.menu button {
+    padding: 1rem;
+    font-weight: 700;
+}
