@@ -536,3 +536,16 @@ ul {
 #pVisit {
     margin-top: 25px;
 }
+
+
+#spotlight a,
+#spotlight p,
+#spotlight li {
+    padding: 0%;
+    margin: 0%;
+    font-size: smaller;
+}
+
+#spotlight ul {
+    margin-top: 15px;
+}

@@ -2,12 +2,29 @@ const membersDataSorce = "data/members.json";
 const articleMembersGrid = document.querySelector(".membersGrid");
 
 
+// async function getMembers() {
+//     const response = await fetch(membersDataSorce);
+//     if (response.ok) {
+//         const data = await response.json();
+//         //console.table(data.members);
+//         displayMembers(data.members);
+//     }
+// }
+
+
+
 async function getMembers() {
-    const response = await fetch(membersDataSorce);
-    if (response.ok) {
-        const data = await response.json();
-        console.table(data.members);
-        displayMembers(data.members);
+    try {
+        const response = await fetch(membersDataSorce);
+        if (response.ok) {
+            const data = await response.json();
+            //console.table(data);
+            displayMembers(data.members);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
     }
 }
 

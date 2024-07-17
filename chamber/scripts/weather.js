@@ -15,7 +15,7 @@ async function apiFetch() {
         const response = await fetch(url1);
         if (response.ok) {
             const data = await response.json();
-            console.table(data);
+            //console.table(data);
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -59,7 +59,7 @@ fetch(url2)
         });
 
         // Mostrar el pronóstico de los 3 días
-        console.log("length: " + threeDayForecast.length);
+        //console.log("length: " + threeDayForecast.length);
         document.querySelector('#imgGraphic').style.gridTemplateColumns = `repeat(${threeDayForecast.length}, 1fr)`;
 
 
@@ -67,7 +67,7 @@ fetch(url2)
             const date = new Date(forecast.dt_txt);
             const temp = forecast.main.temp;
             const description = forecast.weather[0].description;
-            console.log(`Fecha y hora: ${date}, Temperatura: ${temp}°C, Descripción: ${description}`);
+            //console.log(`Fecha y hora: ${date}, Temperatura: ${temp}°C, Descripción: ${description}`);
             let span = document.createElement("span");
             span.textContent = date.getDate();
             document.querySelector('#imgGraphic').appendChild(span);
@@ -96,7 +96,7 @@ fetch(url2)
             const date = new Date(forecast.dt_txt);
             const temp = forecast.main.temp;
             const description = forecast.weather[0].description;
-            console.log(`Fecha y hora: ${date}, Temperatura: ${temp}°C, Descripción: ${description}`);
+            //console.log(`Fecha y hora: ${date}, Temperatura: ${temp}°C, Descripción: ${description}`);
             let span = document.createElement("span");
             span.textContent = Math.round(temp) + "°";
             document.querySelector('#imgGraphic').appendChild(span);
