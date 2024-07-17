@@ -191,7 +191,7 @@ nav .active {
 }
 
 .parent-cards {
-    max-width: 960px;
+    /* max-width: 960px; */
     margin: 1rem 2vw;
 }
 
@@ -261,6 +261,15 @@ nav .active {
     border: 1px solid #dee2e6;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Infocard {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+ul {
+    padding-left: 20px;
 }
 
 .card:hover {
@@ -508,4 +517,22 @@ nav .active {
 .title {
     text-align: center;
     font-size: large;
+}
+
+#imgGraphic {
+    display: grid;
+    align-items: end;
+    justify-items: center;
+}
+
+#imgGraphic img {
+    margin: 1px;
+}
+
+#imgGraphic span {
+    font-size: smaller;
+}
+
+#pVisit {
+    margin-top: 25px;
 }

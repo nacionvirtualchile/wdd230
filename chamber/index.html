@@ -47,7 +47,7 @@
         </div>
         <nav id="navigation" class="navigation">
             <ul>
-                <li class="active"><a href="index.html">Inicio</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="join.html">Join us</a></li>
@@ -80,11 +80,18 @@
                 <p>Adjudican más de mil millones</p>
                 <p>Nueva ley de pesca</p>
             </section>
-            <section class="card">
+            <section class="card" id="Infocard">
                 <h2>Information</h2>
                 <p>Dirección: Calle Sucre, 12, Antofagasta</p>
                 <p>Fono: +56912345678</p>
                 <p>Facebook: @camaraantofagasta</p>
+                <p id="city"></p>
+                <p id="wheaterTemperature"></p>
+                <picture><img id="wheaterIcon" src="" alt=""></picture>
+                <p id="wheaterDescription"></p>
+                <p><span class="label">Next 3 days forecast: </span><span class="visits"></span></p>
+                <div id="imgGraphic"></div>
+                <p id="pVisit"><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </section>
         </div>
     </main>
@@ -97,6 +104,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/humbergerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>

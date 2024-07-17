@@ -11,6 +11,7 @@ const gridContainers = document.querySelectorAll('.grid-container section');
 const myFormLabels = document.querySelectorAll('.myForm label');
 const myFormInputs = document.querySelectorAll('.myForm input');
 const myFormTextAreas = document.querySelectorAll('.myForm textarea');
+const as = document.querySelectorAll('a');
 
 
 modeButton.addEventListener('click', () => {
@@ -97,14 +98,20 @@ modeButton.addEventListener('click', () => {
             });
         }
 
-
-
+        if (as) {
+            as.forEach(a => {
+                a.style.color = "#fff";
+            });
+        }
 
 
         logo.setAttribute('src', "images/camara-comercio-logo-light.png");
         navAToA.forEach(enlace => {
             enlace.style.color = "#90e0ef";
         });
+
+
+
 
     } else {
         imgMode.setAttribute('src', "images/dark-mode.svg");
@@ -175,6 +182,12 @@ modeButton.addEventListener('click', () => {
             myFormTextAreas.forEach(myFormTextArea => {
                 myFormTextArea.style.color = "#000";
                 myFormTextArea.style.background = "#eee";
+            });
+        }
+
+        if (as) {
+            as.forEach(a => {
+                a.style.color = "#000";
             });
         }
 
