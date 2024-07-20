@@ -123,7 +123,7 @@ function displayResults2(data) {
 
 
 
-
-apiFetch();
 forcastFetch();
+apiFetch();
+
 
