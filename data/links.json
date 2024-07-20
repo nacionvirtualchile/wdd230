@@ -112,6 +112,15 @@
                     "title": "The Directory Page"
                 }
             ]
+        },
+        {
+            "week": "Week 6",
+            "links": [
+                {
+                    "url": "https://nacionvirtualchile.github.io/wdd230/chamber/",
+                    "title": "Chamber Project - Home Page Enhancements"
+                }
+            ]
         }
     ]
 }
