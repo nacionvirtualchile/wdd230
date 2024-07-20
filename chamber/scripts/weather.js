@@ -30,8 +30,8 @@ async function apiFetch() {
 
 
 function displayResults(data) {
-    city.textContent = "Locación: " + data.name;
-    weather.innerHTML = "Temperatura actual: " + `${data.main.temp}&deg;C`;
+    city.textContent = "Location: " + data.name;
+    weather.innerHTML = "Temperature now: " + `${data.main.temp}&deg;C`;
     let desc = data.weather[0].description;
     let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weatherIcon.setAttribute('src', iconsrc);
