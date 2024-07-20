@@ -549,3 +549,37 @@ ul {
 #spotlight ul {
     margin-top: 15px;
 }
+
+
+/* //////////////// BANNER TO VISIT ///////////// */
+/* small view navigation */
+#bannerButton {
+    font-size: 1rem;
+    border: 0;
+    background: none;
+    color: #000;
+    /* position: absolute; */
+    /* position: relative; */
+    left: 10px;
+    top: 10px;
+
+}
+
+#bannerButton::before {
+    content: "❌";
+    margin-left: 10px;
+}
+
+
+
+.bannerToVisit {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 4px;
+
+}
