@@ -14,22 +14,27 @@ const articleMembersGrid = document.querySelector(".membersGrid");
 // }
 
 
-async function getMembers() {
-    try {
-        const response = await fetch(membersDataSorce);
-        if (response.ok) {
-            const data = await response.json();
-            //console.table(data);
-            displayMembers(data.members);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-        document.querySelector("#spotlight").style.display = 'none';
 
-    }
-}
+
+// async function getMembers() {
+//     try {
+//         const response = await fetch(membersDataSorce);
+//         if (response.ok) {
+//             const data = await response.json();
+//             //console.table(data);
+//             displayMembers(data.members);
+//         } else {
+//             throw Error(await response.text());
+//         }
+//     } catch (error) {
+//         console.log(error);
+//         document.querySelector("#spotlight").style.display = 'none';
+
+//     }
+// }
+
+
+
 
 
 const displayMembers = (data) => {
@@ -39,9 +44,9 @@ const displayMembers = (data) => {
         // Puedes agregar más condiciones para filtrar como necesites
     });
     //displayMembers(1, filteredData.members.length);
-    console.log(filteredData.length);
-    console.log(filteredData);
-    console.table(filteredData);
+    // console.log(filteredData.length);
+    // console.log(filteredData);
+    // console.table(filteredData);
     get2RandomNumbers(filteredData, 1, filteredData.length);
 
 }
@@ -59,7 +64,7 @@ function get2RandomNumbers(filteredData, min, max) {
     } while (secondNumber === firstNumber);
 
     //console.log(firstNumber, secondNumber);
-    console.log(filteredData[firstNumber].name, filteredData[secondNumber].name);
+    //console.log(filteredData[firstNumber].name, filteredData[secondNumber].name);
     let p1 = document.createElement('p');
     let url1 = document.createElement('a');
     let p2 = document.createElement('p');
@@ -95,4 +100,13 @@ function getRandomNumber(min, max) {
 
 
 
-getMembers();
+
+fetch(membersDataSorce)
+    .then(response => response.json())
+    .then(data => {
+        displayMembers(data.members);
+    })
+    .catch(error => {
+        console.log(error);
+        document.querySelector("#spotlight").style.display = 'none';
+    });
