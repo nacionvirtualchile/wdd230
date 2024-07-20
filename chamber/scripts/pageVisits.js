@@ -2,9 +2,9 @@ const visitsDisplay = document.querySelector(".visits");
 let thisMoment = new Date();
 let differenceInMilliseconds = 0;
 
-let timeOfVisit = window.localStorage.getItem("timeOfVisits-ls") || thisMoment;
+let timeOfVisit = window.localStorage.getItem("timeOfVisits-ls2") || thisMoment;
 if (timeOfVisit !== thisMoment) {
-    timeOfVisit = new Date(window.localStorage.getItem("timeOfVisits-ls"))
+    timeOfVisit = new Date(window.localStorage.getItem("timeOfVisits-ls2"))
 
     differenceInMilliseconds = timeOfVisit - thisMoment;
     millisecondsPerDay = 24 * 60 * 60 * 1000; // Horas * Minutos * Segundos * Milisegundos
@@ -23,6 +23,6 @@ if (timeOfVisit !== thisMoment) {
 } else {
     visitsDisplay.textContent = `Welcome! Let us know if you have any questions.`;
 }
-localStorage.setItem("timeOfVisits-ls", timeOfVisit);
+localStorage.setItem("timeOfVisits-ls2", timeOfVisit);
 
 
