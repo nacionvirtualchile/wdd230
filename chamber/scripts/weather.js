@@ -1,7 +1,7 @@
 const url1 = 'https://api.openweathermap.org/data/2.5/weather?lat=-23.6491&lon=-70.4016&appid=4896cc561f0455dcf0c2d2e8e8a23fa1&units=metric';
 
 
-const url2 = 'http://api.openweathermap.org/data/2.5/forecast?q=Antofagasta,CL&units=metric&appid=4896cc561f0455dcf0c2d2e8e8a23fa1';
+const url2 = 'https://api.openweathermap.org/data/2.5/forecast?q=Antofagasta,CL&units=metric&appid=4896cc561f0455dcf0c2d2e8e8a23fa1';
 
 const city = document.querySelector('#city');
 const weather = document.querySelector('#wheaterTemperature');
