@@ -9,7 +9,7 @@ bannerButton.addEventListener('click', () => {
 
 const day = new Date().getDay();
 
-if (day === 1 || day === 2 || day === 3) {
+if (day === 1 || day === 2 || day === 3 || day === 6) {
     bannerToVisit.style.display = 'flex';
 } else {
     bannerToVisit.style.display = 'none';
