@@ -583,3 +583,29 @@ ul {
     padding: 4px;
 
 }
+
+
+.callToAction {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.callToAction p {
+    margin-bottom: 25px;
+}
+
+.callToAction a {
+    border: none;
+    background-image: linear-gradient(var(--color-background-dark), var(--color-primary));
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem 70px;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px var(--color-primary);
+    align-self: center;
+    margin-top: 15px;
+
+}
