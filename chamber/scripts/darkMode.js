@@ -9,6 +9,7 @@ const BarSideCards = document.querySelectorAll('.card');
 const DiscoveryMains = document.querySelectorAll('#DiscoverMain');
 const gridContainers = document.querySelectorAll('.grid-container section');
 const myFormLabels = document.querySelectorAll('.myForm label');
+const myFormlegends = document.querySelectorAll('.myForm legend');
 const myFormInputs = document.querySelectorAll('.myForm input');
 const myFormSubmits = document.querySelectorAll('.myForm input[type="submit"]');
 const myFormTextAreas = document.querySelectorAll('.myForm textarea');
@@ -80,6 +81,14 @@ modeButton.addEventListener('click', () => {
                 myFormLabel.style.background = "#505050";
             });
         }
+
+
+        if (myFormlegends) {
+            myFormlegends.forEach(myFormlegend => {
+                myFormlegend.style.color = "#fff";
+            });
+        }
+
 
         if (myFormInputs) {
             myFormInputs.forEach(myFormInput => {
@@ -177,6 +186,12 @@ modeButton.addEventListener('click', () => {
             myFormLabels.forEach(myFormLabel => {
                 myFormLabel.style.color = "#000";
                 myFormLabel.style.background = "#eee";
+            });
+        }
+
+        if (myFormlegends) {
+            myFormlegends.forEach(myFormlegend => {
+                myFormlegend.style.color = "#000";
             });
         }
 
