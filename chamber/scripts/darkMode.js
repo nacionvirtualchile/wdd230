@@ -12,6 +12,7 @@ const myFormLabels = document.querySelectorAll('.myForm label');
 const myFormInputs = document.querySelectorAll('.myForm input');
 const myFormTextAreas = document.querySelectorAll('.myForm textarea');
 const as = document.querySelectorAll('a');
+const callToActionAs = document.querySelectorAll('.callToAction a');
 
 
 modeButton.addEventListener('click', () => {
@@ -139,7 +140,7 @@ modeButton.addEventListener('click', () => {
         if (BarSideCards) {
             BarSideCards.forEach(BarSideCard => {
                 BarSideCard.style.color = "#000";
-                BarSideCard.style.background = "#fff";
+                BarSideCard.style.background = "#90e0ef";
             });
         }
 
@@ -191,6 +192,11 @@ modeButton.addEventListener('click', () => {
             });
         }
 
+        if (callToActionAs) {
+            callToActionAs.forEach(callToActionA => {
+                callToActionA.style.color = "#fff";
+            });
+        }
 
 
 
