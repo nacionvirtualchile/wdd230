@@ -10,9 +10,12 @@ const DiscoveryMains = document.querySelectorAll('#DiscoverMain');
 const gridContainers = document.querySelectorAll('.grid-container section');
 const myFormLabels = document.querySelectorAll('.myForm label');
 const myFormInputs = document.querySelectorAll('.myForm input');
+const myFormSubmits = document.querySelectorAll('.myForm input[type="submit"]');
 const myFormTextAreas = document.querySelectorAll('.myForm textarea');
 const as = document.querySelectorAll('a');
 const callToActionAs = document.querySelectorAll('.callToAction a');
+
+
 
 
 modeButton.addEventListener('click', () => {
@@ -78,19 +81,24 @@ modeButton.addEventListener('click', () => {
             });
         }
 
-        if (myFormLabels) {
-            myFormLabels.forEach(myFormLabel => {
-                myFormLabel.style.color = "#fff";
-                myFormLabel.style.background = "#505050";
-            });
-        }
-
         if (myFormInputs) {
             myFormInputs.forEach(myFormInput => {
                 myFormInput.style.color = "#fff";
-                myFormInput.style.background = "#505050";
+                myFormInput.style.background = "#606060";
             });
         }
+
+
+        if (myFormSubmits) {
+            myFormSubmits.forEach(myFormSubmit => {
+                myFormSubmit.style.color = "white";
+                myFormSubmit.style.background = "darkblue";
+            });
+        }
+
+
+
+
 
         if (myFormTextAreas) {
             myFormTextAreas.forEach(myFormTextArea => {
@@ -178,6 +186,16 @@ modeButton.addEventListener('click', () => {
                 myFormInput.style.background = "#eee";
             });
         }
+
+
+
+        if (myFormSubmits) {
+            myFormSubmits.forEach(myFormSubmit => {
+                myFormSubmit.style.color = "white";
+                myFormSubmit.style.background = "darkblue";
+            });
+        }
+
 
         if (myFormTextAreas) {
             myFormTextAreas.forEach(myFormTextArea => {

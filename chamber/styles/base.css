@@ -609,3 +609,8 @@ ul {
     margin-top: 15px;
 
 }
+
+
+.myForm input::placeholder {
+    color: #999;
+}
