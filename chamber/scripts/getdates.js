@@ -5,9 +5,12 @@ const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = "Ultima modificación: " + lastModified;
 
 
+var myform = document.querySelector('#myForm');
+if (myform) {
+    const date = new Date();
+    document.getElementById('timestamp').textContent = date;
+}
 
-const date = new Date();
-document.getElementById('timestamp').textContent = date;
 
 
 // var myform = document.querySelector('#myForm');

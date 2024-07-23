@@ -2,41 +2,6 @@ const membersDataSorce = "data/members.json";
 const articleMembersGrid = document.querySelector(".membersGrid");
 
 
-// async function getMembers() {
-//     const response = await fetch(membersDataSorce);
-//     if (response.ok) {
-//         const data = await response.json();
-//         //console.table(data.members);
-//         displayMembers(data.members);
-
-
-//     }
-// }
-
-
-
-
-// async function getMembers() {
-//     try {
-//         const response = await fetch(membersDataSorce);
-//         if (response.ok) {
-//             const data = await response.json();
-//             //console.table(data);
-//             displayMembers(data.members);
-//         } else {
-//             throw Error(await response.text());
-//         }
-//     } catch (error) {
-//         console.log(error);
-//         document.querySelector("#spotlight").style.display = 'none';
-
-//     }
-// }
-
-
-
-
-
 const displayMembers = (data) => {
     const filteredData = data.filter(data => {
         // Retorna true para los registros que deseas conservar
@@ -50,7 +15,6 @@ const displayMembers = (data) => {
     get2RandomNumbers(filteredData, 1, filteredData.length);
 
 }
-
 
 
 
@@ -100,7 +64,6 @@ function getRandomNumber(min, max) {
 
 
 
-
 fetch(membersDataSorce)
     .then(response => response.json())
     .then(data => {
@@ -110,3 +73,37 @@ fetch(membersDataSorce)
         console.log(error);
         document.querySelector("#spotlight").style.display = 'none';
     });
+
+
+
+
+// async function getMembers() {
+//     const response = await fetch(membersDataSorce);
+//     if (response.ok) {
+//         const data = await response.json();
+//         //console.table(data.members);
+//         displayMembers(data.members);
+
+
+//     }
+// }
+
+
+
+
+// async function getMembers() {
+//     try {
+//         const response = await fetch(membersDataSorce);
+//         if (response.ok) {
+//             const data = await response.json();
+//             //console.table(data);
+//             displayMembers(data.members);
+//         } else {
+//             throw Error(await response.text());
+//         }
+//     } catch (error) {
+//         console.log(error);
+//         document.querySelector("#spotlight").style.display = 'none';
+
+//     }
+// }
