@@ -7,7 +7,7 @@ async function getLinks() {
     const response = await fetch(linksURL);
     if (response.ok) {
         const data = await response.json();
-        console.table(data.weeks);
+        //console.table(data.weeks);
         displayLinks(data.weeks);
     }
 }
