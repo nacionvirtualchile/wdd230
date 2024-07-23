@@ -598,6 +598,13 @@ ul {
     margin-bottom: 25px;
 }
 
+
+.callToAction h2 {
+    font-size: medium;
+}
+
+
+
 .callToAction a {
     border: none;
     background-image: linear-gradient(var(--color-background-dark), var(--color-primary));
