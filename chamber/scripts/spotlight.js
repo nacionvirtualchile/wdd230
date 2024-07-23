@@ -13,7 +13,7 @@ async function fetchMembersData() {
         }
 
         let data = await response.json();
-        console.log(data); // Aquí puedes procesar los datos como necesites
+        //console.log(data); // Aquí puedes procesar los datos como necesites
         // Por ejemplo, mostrar los datos en la página
         displayMembers(data.members); //displayMembers(data.members)
     } catch (error) {
