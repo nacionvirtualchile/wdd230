@@ -1,5 +1,27 @@
 const membersDataSorce = "data/members.json";
-const articleMembersGrid = document.querySelector(".membersGrid");
+//const articleMembersGrid = document.querySelector(".membersGrid");
+
+
+
+async function fetchMembersData() {
+    try {
+        let response = await fetch(membersDataSorce);
+
+        // Verificar si la respuesta es correcta
+        if (!response.ok) {
+            throw new Error(`Error al cargar el archivo: ${response.statusText}`);
+        }
+
+        let data = await response.json();
+        console.log(data); // Aquí puedes procesar los datos como necesites
+        // Por ejemplo, mostrar los datos en la página
+        displayMembers(data.members); //displayMembers(data.members)
+    } catch (error) {
+        console.error("Hubo un problema con la solicitud:", error);
+    }
+}
+
+
 
 
 const displayMembers = (data) => {
@@ -12,13 +34,19 @@ const displayMembers = (data) => {
     // console.log(filteredData.length);
     // console.log(filteredData);
     // console.table(filteredData);
-    get2RandomNumbers(filteredData, 1, filteredData.length);
+    //get2RandomNumbers(filteredData, 1, filteredData.length);
+    get2RandomNumbers(filteredData, 0, filteredData.length - 1);
 
 }
 
 
 
 function get2RandomNumbers(filteredData, min, max) {
+    if (max < 1) {
+        console.error("No hay suficientes datos para seleccionar dos miembros.");
+        return;
+    }
+
     const firstNumber = getRandomNumber(min, max);
 
     let secondNumber;
@@ -64,15 +92,18 @@ function getRandomNumber(min, max) {
 
 
 
-fetch(membersDataSorce)
-    .then(response => response.json())
-    .then(data => {
-        displayMembers(data.members);
-    })
-    .catch(error => {
-        console.log(error);
-        document.querySelector("#spotlight").style.display = 'none';
-    });
+document.addEventListener("DOMContentLoaded", fetchMembersData);
+
+
+// fetch(membersDataSorce)
+//     .then(response => response.json())
+//     .then(data => {
+//         displayMembers(data.members);
+//     })
+//     .catch(error => {
+//         console.log(error);
+//         document.querySelector("#spotlight").style.display = 'none';
+//     });
 
 
 
