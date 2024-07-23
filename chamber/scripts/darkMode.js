@@ -6,6 +6,7 @@ const logo = document.querySelector('#camara-comercio-logo');
 const navAToA = document.querySelectorAll('nav a');
 const BarSides = document.querySelectorAll('.sidebar');
 const BarSideCards = document.querySelectorAll('.card');
+const discoverCards = document.querySelectorAll('.card-list .card');
 const DiscoveryMains = document.querySelectorAll('#DiscoverMain');
 const gridContainers = document.querySelectorAll('.grid-container section');
 const myFormLabels = document.querySelectorAll('.myForm label');
@@ -40,6 +41,7 @@ modeButton.addEventListener('click', () => {
                 BarSideCard.style.background = "#505050";
             });
         }
+
 
         if (BarSides) {
             BarSides.forEach(BarSide => {
@@ -160,6 +162,15 @@ modeButton.addEventListener('click', () => {
                 BarSideCard.style.background = "#90e0ef";
             });
         }
+
+
+        if (discoverCards) {
+            discoverCards.forEach(discoverCard => {
+                discoverCard.style.background = "#fff";
+            });
+        }
+
+
 
         if (BarSides) {
             BarSides.forEach(BarSide => {
