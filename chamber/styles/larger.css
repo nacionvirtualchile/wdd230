@@ -93,4 +93,13 @@
     }
 
 
+
+    #imgGraphic img {
+        width: 15px;
+    }
+
+    #imgGraphic span {
+        font-size: 10px;
+    }
+
 }

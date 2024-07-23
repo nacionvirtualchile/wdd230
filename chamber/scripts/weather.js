@@ -98,7 +98,7 @@ function displayResults2(data) {
         let image = document.createElement("img");
         image.setAttribute('src', "images/Temp.png");
         image.setAttribute('alt', `${date}`);
-        image.setAttribute('width', "15px");
+        //image.setAttribute('width', "10px");
         image.setAttribute('height', 2 * `${temp}`);
         document.querySelector('#imgGraphic').appendChild(image);
 

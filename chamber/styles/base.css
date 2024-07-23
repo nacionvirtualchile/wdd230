@@ -527,10 +527,11 @@ ul {
 
 #imgGraphic img {
     margin: 1px;
+    width: 10px;
 }
 
 #imgGraphic span {
-    font-size: smaller;
+    font-size: 7px;
 }
 
 #pVisit {
